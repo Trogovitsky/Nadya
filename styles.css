@@ -1,4 +1,4 @@
-/* Сброс некоторых стилей */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden; /* отключим стандартную прокрутку */
+  overflow: hidden;
 }
 
 body {
@@ -24,7 +24,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Навигация */
 .site-header {
   position: fixed;
   top: 0;
@@ -51,10 +50,10 @@ body {
   color: #00adee;
 }
 
-/* Секции */
+
 .section {
   min-height: 100vh;
-  padding: 100px 20px 60px; /* сверху подфиксированный заголовок */
+  padding: 100px 20px 60px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,13 +64,13 @@ body {
 }
 
 .typing-container {
-  font-size: clamp(1.2rem, 4vw, 2.2rem); /* гибкий размер */
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
   text-align: center;
-  white-space: normal;       /* разрешаем перенос */
-  word-break: break-word;    /* переносим длинные слова */
-  max-width: 90%;            /* ограничиваем ширину */
-  margin: 0 auto;            /* выравниваем по центру */
-  line-height: 1.4;          /* читаемость */
+  white-space: normal;       
+  word-break: break-word;    
+  max-width: 90%;            
+  margin: 0 auto;            
+  line-height: 1.4;          
 }
 
 .cursor {
@@ -82,7 +81,6 @@ body {
   50% { opacity: 0; }
 }
 
-/* About секция */
 .about-section .content-wrap {
   max-width: 600px;
   text-align: center;
@@ -96,7 +94,7 @@ body {
   line-height: 1.6;
 }
 
-/* Галерея */
+
 .gallery-section .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,7 +113,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Слайдер */
+
 .slider-section {
   position: relative;
 }
@@ -136,7 +134,7 @@ body {
   display: block;
 }
 
-/* Кнопки слайдера */
+
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -156,7 +154,7 @@ body {
   right: 10px;
 }
 
-/* Footer */
+
 .site-footer {
   padding: 2rem;
   text-align: center;
