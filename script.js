@@ -1,4 +1,3 @@
-// ===== 101 причина почему я люблю тебя =====
 const typingTexts = [
   "❤️❤️❤️❤️❤️",
   "❤️❤️❤️❤️❤️❤️",
@@ -38,11 +37,8 @@ const typingTexts = [
   "❤️❤️❤️❤️❤️❤️.",
     "❤️❤️❤️❤️❤️",
   "❤️❤️❤️❤️❤️❤️",
-  "❤️❤️❤️❤️❤️",
-  "❤️❤️❤️❤️❤️❤️.",
-];
-
-// ===== Печатающийся эффект сообщений =====
+  "❤️❤️❤️❤️❤️"]
+  
 const messagesContainer = document.getElementById("messages");
 let msgIndex = 0;
 
@@ -57,10 +53,10 @@ function showNextMessage() {
       if (charIndex < typingTexts[msgIndex].length) {
         newMsg.textContent += typingTexts[msgIndex].charAt(charIndex);
         charIndex++;
-        setTimeout(typeChar, 40); // скорость печати
+        setTimeout(typeChar, 40);
       } else {
         msgIndex++;
-        setTimeout(showNextMessage, 1200); // задержка перед следующим сообщением
+        setTimeout(showNextMessage, 1200);
       }
     }
     typeChar();
